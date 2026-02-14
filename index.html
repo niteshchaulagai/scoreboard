@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    
+    <div class="scoreboard-container">
+        <div class="home-team">
+            <h3 class="label">HOME</h3>
+            <div class="score-box">
+                <span id="home-score">12</span>
+            </div>
+            <div class="button-group">
+                <button onclick="add1ScoreH()">+1</button>
+                <button onclick="add2ScoreH()">+2</button>
+                <button onclick="add3ScoreH()">+3</button>
+            </div>
+            <div class="button-group">
+                <button onclick="minus1Score()">-1</button>
+            </div>
+        </div>
+
+        <div class="guest-team">
+            <h3 class="label">GUEST</h3>
+            <div class="score-box">
+                <span id="guest-score">12</span>
+            </div>
+            <div class="button-group">
+                <button onclick="add1ScoreG()">+1</button>
+                <button onclick="add2ScoreG()">+2</button>
+                <button onclick="add3ScoreG()">+3</button>
+            </div>
+            <div class="button-group">
+                <button onclick="minus1ScoreG()">-1</button>
+            </div>
+        </div>
+    </div>
+    <div class="gameover">
+        <button onclick="">Start</button>
+        <button onclick="resetAll()">Reset</button>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
